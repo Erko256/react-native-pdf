@@ -13,13 +13,13 @@ import {
     requireNativeComponent,
     View,
     Platform,
-    ProgressBarAndroid,
-    ProgressViewIOS,
     ViewPropTypes,
     StyleSheet,
     Image
 } from 'react-native';
 
+import { ProgressBar as ProgressBarAndroid } from '@react-native-community/progress-bar-android';
+import { ProgressView as ProgressViewIOS} from '@react-native-community/progress-view'
 import RNFetchBlob from 'rn-fetch-blob';
 
 const SHA1 = require('crypto-js/sha1');
